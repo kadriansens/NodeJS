@@ -14,7 +14,7 @@ const calorie = fs.readFileSync('text.txt', 'utf8').trimEnd();
 // sum
 const getCalorieSum = (group) =>
     group
-        .split('\r\n')
+        .split('\n')
         .map(Number)
         .reduce((sum, num) => sum + num, 0);
 
@@ -24,5 +24,8 @@ const calorieGroup = calorie.split('\n\n');
 // sum per group
 const calorieSumGroup = calorieGroup.map(getCalorieSum);
 
-console.log(getCalorieSum(calorie));
+// largest sum
+const maxCalorie = Math.max(...calorieSumGroup);
+
+console.log(calorieSumGroup);
 //console.log(caloriesGroup);
