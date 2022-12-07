@@ -14,3 +14,4 @@ function sol(calories) {
 }
 
 sol(calories)
+console.log('hi')
