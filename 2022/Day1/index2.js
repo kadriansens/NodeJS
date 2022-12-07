@@ -1,3 +1,7 @@
+//https://www.youtube.com/watch?v=jY3nhz3pelc&t=4s&ab_channel=CodingSerenity
+
+// https://adventofcode.com/2022/day/1
+
 // read textfile + trim blanks at the end
 const fs = require('fs');
 
